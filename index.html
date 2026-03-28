@@ -12,7 +12,7 @@
             color: #e2e8f0;
             line-height: 1.6;
         }
-        .container { max-width: 1100px; margin: 0 auto; padding: 2rem 1rem; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem 1rem; }
 
         h1 {
             text-align: center;
@@ -35,7 +35,7 @@
             gap: 2rem;
             margin-bottom: 3rem;
         }
-        @media (max-width: 768px) {
+        @media (max-width: 900px) {
             .variants { grid-template-columns: 1fr; }
         }
 
@@ -67,10 +67,24 @@
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
+        .badge.green {
+            background: linear-gradient(135deg, #4ade80, #22d3ee);
+        }
         .card h2 {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             margin-bottom: 0.3rem;
             color: #f1f5f9;
+        }
+        .card .method {
+            display: inline-block;
+            font-size: 0.7rem;
+            padding: 2px 8px;
+            border-radius: 10px;
+            background: #334155;
+            color: #94a3b8;
+            margin-bottom: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
         .card .desc {
             color: #94a3b8;
@@ -80,19 +94,19 @@
 
         .price-total {
             text-align: center;
-            padding: 1.2rem;
+            padding: 1rem;
             background: #0f172a;
             border-radius: 12px;
             margin-bottom: 1.5rem;
         }
         .price-total .amount {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             font-weight: 800;
             color: #38bdf8;
         }
         .price-total .label {
             color: #64748b;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
         }
 
         table {
@@ -100,14 +114,14 @@
             border-collapse: collapse;
         }
         table th, table td {
-            padding: 0.6rem 0.5rem;
+            padding: 0.5rem 0.4rem;
             text-align: left;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
         table th {
             color: #64748b;
             font-weight: 600;
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             text-transform: uppercase;
             letter-spacing: 0.5px;
             border-bottom: 1px solid #334155;
@@ -125,24 +139,24 @@
         a:hover { text-decoration: underline; }
 
         .pros {
-            margin-top: 1.5rem;
-            padding-top: 1rem;
+            margin-top: 1.2rem;
+            padding-top: 0.8rem;
             border-top: 1px solid #334155;
         }
         .pros h3 {
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             color: #64748b;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.4rem;
         }
         .pros ul {
             list-style: none;
             padding: 0;
         }
         .pros li {
-            padding: 0.25rem 0;
-            font-size: 0.9rem;
+            padding: 0.2rem 0;
+            font-size: 0.85rem;
             color: #cbd5e1;
         }
         .pros li::before {
@@ -156,21 +170,21 @@
             color: #f87171;
         }
 
-        .architecture {
+        .section {
             background: #1e293b;
             border-radius: 16px;
             padding: 2rem;
             border: 1px solid #334155;
             margin-bottom: 2rem;
         }
-        .architecture h2 {
+        .section h2 {
             font-size: 1.3rem;
             margin-bottom: 1.5rem;
             color: #f1f5f9;
         }
         .arch-diagram {
             font-family: 'Courier New', monospace;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             background: #0f172a;
             padding: 1.5rem;
             border-radius: 8px;
@@ -180,24 +194,12 @@
             color: #94a3b8;
         }
 
-        .odoo-modules {
-            background: #1e293b;
-            border-radius: 16px;
-            padding: 2rem;
-            border: 1px solid #334155;
-            margin-bottom: 2rem;
-        }
-        .odoo-modules h2 {
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
-            color: #f1f5f9;
-        }
         .module-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(3, 1fr);
             gap: 1rem;
         }
-        @media (max-width: 768px) {
+        @media (max-width: 900px) {
             .module-grid { grid-template-columns: 1fr; }
         }
         .module {
@@ -206,39 +208,28 @@
             padding: 1rem;
         }
         .module h3 {
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             color: #e2e8f0;
             margin-bottom: 0.3rem;
         }
         .module p {
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             color: #94a3b8;
         }
         .module .module-price {
             font-weight: 700;
             color: #fbbf24;
             margin-top: 0.3rem;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
 
-        .notes {
-            background: #1e293b;
-            border-radius: 16px;
-            padding: 2rem;
-            border: 1px solid #334155;
-        }
-        .notes h2 {
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
-            color: #f1f5f9;
-        }
         .notes ul {
             list-style: none;
             padding: 0;
         }
         .notes li {
             padding: 0.4rem 0;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: #cbd5e1;
         }
         .notes li::before {
@@ -256,6 +247,34 @@
             margin-right: 0.5rem;
         }
 
+        /* Comparison table */
+        .compare-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        .compare-table th, .compare-table td {
+            padding: 0.6rem 0.8rem;
+            text-align: center;
+            font-size: 0.85rem;
+            border-bottom: 1px solid #334155;
+        }
+        .compare-table th {
+            color: #94a3b8;
+            font-weight: 600;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            background: #0f172a;
+        }
+        .compare-table th:first-child,
+        .compare-table td:first-child {
+            text-align: left;
+        }
+        .compare-table tr:last-child td { border-bottom: none; }
+        .yes { color: #4ade80; font-weight: 700; }
+        .no { color: #f87171; }
+        .partial { color: #fbbf24; }
+
         footer {
             text-align: center;
             margin-top: 3rem;
@@ -269,14 +288,89 @@
 <body>
     <div class="container">
         <h1>Odoo Attendance Terminal</h1>
-        <p class="subtitle">Tablet na stenu + identifikacia zamestnancov | Cennik komponentov</p>
+        <p class="subtitle">Tablet na stenu + identifikacia zamestnancov | 4 varianty riesenia</p>
+
+        <!-- COMPARISON TABLE -->
+        <div class="section">
+            <h2>Porovnanie variant</h2>
+            <table class="compare-table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>A: QR/Barkod<br>(kamera)</th>
+                        <th>B: QR/Barkod<br>(citacka)</th>
+                        <th>C: Face<br>Recognition</th>
+                        <th>D: Odtlacky<br>prstov</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cena</td>
+                        <td><strong>~240 &euro;</strong></td>
+                        <td><strong>~290 &euro;</strong></td>
+                        <td><strong>~240 &euro;</strong></td>
+                        <td><strong>~370 &euro;</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Externy HW</td>
+                        <td class="yes">Ziadny</td>
+                        <td class="no">USB citacka</td>
+                        <td class="yes">Ziadny</td>
+                        <td class="no">USB citacka</td>
+                    </tr>
+                    <tr>
+                        <td>Bezkontaktne</td>
+                        <td class="yes">Ano</td>
+                        <td class="no">Nie</td>
+                        <td class="yes">Ano</td>
+                        <td class="no">Nie</td>
+                    </tr>
+                    <tr>
+                        <td>Odoo nativne</td>
+                        <td class="yes">Ano (kiosk)</td>
+                        <td class="yes">Ano (kiosk)</td>
+                        <td class="partial">Modul (~200&euro;)</td>
+                        <td class="no">Custom vyvoj</td>
+                    </tr>
+                    <tr>
+                        <td>Presnost</td>
+                        <td class="yes">100%</td>
+                        <td class="yes">100%</td>
+                        <td class="partial">~98%</td>
+                        <td class="yes">99.9%+</td>
+                    </tr>
+                    <tr>
+                        <td>GDPR narocnost</td>
+                        <td class="yes">Nizka</td>
+                        <td class="yes">Nizka</td>
+                        <td class="no">Vysoka (biometria)</td>
+                        <td class="no">Vysoka (biometria)</td>
+                    </tr>
+                    <tr>
+                        <td>Mozne obist?</td>
+                        <td class="partial">Ano (cudzou kartou)</td>
+                        <td class="partial">Ano (cudzou kartou)</td>
+                        <td class="partial">Tazko (fotka?)</td>
+                        <td class="yes">Nie</td>
+                    </tr>
+                    <tr>
+                        <td>Zlozitost</td>
+                        <td class="yes">Velmi jednoduche</td>
+                        <td class="partial">Jednoduche</td>
+                        <td class="partial">Stredna</td>
+                        <td class="no">Vysoka</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
         <div class="variants">
-            <!-- VARIANTA A: Face Recognition -->
+            <!-- VARIANTA A: QR/Barcode Camera -->
             <div class="card recommended">
-                <span class="badge">Odporucane</span>
-                <h2>Varianta A: Face Recognition</h2>
-                <p class="desc">Tablet s kamerou na stene &mdash; zamestnanec sa pozrie do kamery, system ho rozpozna. Ziadny externy HW.</p>
+                <span class="badge green">Najjednoduchsie</span>
+                <h2>A: QR/Barkod (kamera tabletu)</h2>
+                <span class="method">Nativne v Odoo kiosk</span>
+                <p class="desc">Zamestnanec pridrzi badge s QR/barkodom pred kamerou tabletu. Odoo kiosk mode to podporuje nativne &mdash; ziadny vyvoj.</p>
 
                 <div class="price-total">
                     <div class="label">Celkova cena</div>
@@ -291,8 +385,8 @@
                         <tr>
                             <td>
                                 <strong>Samsung Galaxy Tab A9+ 10.5"</strong><br>
-                                <small>WiFi, 4GB/64GB, USB-C, predna kamera 5MP</small><br>
-                                <a href="https://tablety.heureka.sk/samsung-galaxy-tab-a9-plus-sm-x210nzaeeue/" target="_blank">Heureka.sk</a>
+                                <small>WiFi, 4GB/64GB, predna/zadna kamera</small><br>
+                                <a href="https://tablety.heureka.sk/samsung-galaxy-tab-a9-plus-sm-x210nzaeeue/" target="_blank">Heureka.sk ~200&euro;</a>
                             </td>
                             <td class="price-col">~200 &euro;</td>
                         </tr>
@@ -305,11 +399,18 @@
                         </tr>
                         <tr>
                             <td>
-                                <strong>Tablet drziak na stenu</strong><br>
+                                <strong>Drziak na stenu</strong><br>
                                 <small>Univerzalny, zamykatelny, 10-11"</small><br>
                                 <a href="https://www.amazon.de/s?k=tablet+wall+mount+10+inch+lockable" target="_blank">Amazon.de</a>
                             </td>
                             <td class="price-col">~25 &euro;</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Zamestnanecke badge karty</strong><br>
+                                <small>Plastove karty s QR/barkodom, tlac</small>
+                            </td>
+                            <td class="price-col">~1 &euro;/ks</td>
                         </tr>
                     </tbody>
                 </table>
@@ -317,31 +418,32 @@
                 <div class="pros">
                     <h3>Vyhody</h3>
                     <ul>
-                        <li>Ziadna citacka &mdash; staci vstavaná kamera tabletu</li>
-                        <li>Bezkontaktne &mdash; hygiena, rychlost</li>
+                        <li>Nativna podpora v Odoo kiosk mode &mdash; zero vyvoj</li>
+                        <li>Najlacnejsie riesenie</li>
+                        <li>Bezkontaktne</li>
+                        <li>Ziadne biometricke udaje &mdash; GDPR jednoduche</li>
                         <li>Jednoducha montaz &mdash; len tablet + nabijacka</li>
-                        <li>Nizsia cena (~240 &euro;)</li>
-                        <li>Hotove Odoo moduly pre face recognition</li>
                     </ul>
                 </div>
                 <div class="pros cons">
                     <h3>Nevyhody</h3>
                     <ul>
-                        <li>Zavisle od osvetlenia</li>
-                        <li>Menej presne ako odtlacky pri dvojcatach / podobnych ludom</li>
-                        <li>GDPR &mdash; biometricke udaje (plati pre obe varianty)</li>
+                        <li>Zamestnanec musi nosit badge / kartu</li>
+                        <li>Mozne zneuzitie cudzou kartou</li>
+                        <li>Kamera moze byt pomalsie ako dedik. citacka</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- VARIANTA B: Fingerprint -->
+            <!-- VARIANTA B: QR/Barcode USB Scanner -->
             <div class="card">
-                <h2>Varianta B: Odtlacky prstov</h2>
-                <p class="desc">Tablet + USB citacka odtlackov prstov. Android wrapper appka s WebView + USB bridge. Najpresnejsia identifikacia.</p>
+                <h2>B: QR/Barkod (USB citacka)</h2>
+                <span class="method">Nativne v Odoo kiosk</span>
+                <p class="desc">Dedickovana USB citacka barkodov/QR. Blesková rychlost skenovania. Odoo kiosk to podporuje nativne.</p>
 
                 <div class="price-total">
                     <div class="label">Celkova cena</div>
-                    <div class="amount">~370 &euro;</div>
+                    <div class="amount">~290 &euro;</div>
                 </div>
 
                 <table>
@@ -353,7 +455,162 @@
                             <td>
                                 <strong>Samsung Galaxy Tab A9+ 10.5"</strong><br>
                                 <small>WiFi, 4GB/64GB, USB-C OTG</small><br>
-                                <a href="https://tablety.heureka.sk/samsung-galaxy-tab-a9-plus-sm-x210nzaeeue/" target="_blank">Heureka.sk</a>
+                                <a href="https://tablety.heureka.sk/samsung-galaxy-tab-a9-plus-sm-x210nzaeeue/" target="_blank">Heureka.sk ~200&euro;</a>
+                            </td>
+                            <td class="price-col">~200 &euro;</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>USB barkod/QR citacka</strong><br>
+                                <small>2D skener, keyboard emulacia (HID)</small><br>
+                                <a href="https://www.amazon.de/s?k=usb+barcode+scanner+2d+qr" target="_blank">Amazon.de</a>
+                            </td>
+                            <td class="price-col">~25 &euro;</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>USB-C OTG Hub s PD</strong><br>
+                                <small>UGREEN &mdash; USB-A + nabijanie</small><br>
+                                <a href="https://www.amazon.de/UGREEN-Verteiler-Stromversorgung-Port-kompatibel-Thinkpad-Grau/dp/B07Q29N6H1" target="_blank">Amazon.de</a>
+                            </td>
+                            <td class="price-col">~25 &euro;</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>USB-C nabijacka 25W</strong>
+                            </td>
+                            <td class="price-col">~18 &euro;</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Kiosk puzdro na stenu</strong><br>
+                                <small>Zamykatelne, priestor na citacku</small><br>
+                                <a href="https://www.amazon.de/s?k=tablet+kiosk+wall+mount+10+inch" target="_blank">Amazon.de</a>
+                            </td>
+                            <td class="price-col">~25 &euro;</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Zamestnanecke badge karty</strong><br>
+                                <small>Plastove karty s barkod/QR</small>
+                            </td>
+                            <td class="price-col">~1 &euro;/ks</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="pros">
+                    <h3>Vyhody</h3>
+                    <ul>
+                        <li>Bleskovych scan (&lt;0.5s) &mdash; keyboard emulacia</li>
+                        <li>Nativna podpora v Odoo kiosk mode</li>
+                        <li>Ziadny custom vyvoj</li>
+                        <li>Spolahlive aj pri slabom osvetleni</li>
+                    </ul>
+                </div>
+                <div class="pros cons">
+                    <h3>Nevyhody</h3>
+                    <ul>
+                        <li>Treba USB OTG hub + nabijanie</li>
+                        <li>Viac kabelaze / zlozitejsia montaz</li>
+                        <li>Mozne zneuzitie cudzou kartou</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- VARIANTA C: Face Recognition -->
+            <div class="card recommended">
+                <span class="badge">Odporucane</span>
+                <h2>C: Face Recognition</h2>
+                <span class="method">Odoo modul (plateny)</span>
+                <p class="desc">Zamestnanec sa pozrie do kamery tabletu, system ho automaticky rozpozna. Ziadna karta, ziadny kontakt.</p>
+
+                <div class="price-total">
+                    <div class="label">Celkova cena</div>
+                    <div class="amount">~240 &euro;</div>
+                    <div class="label">+ Odoo modul ~150-300 &euro;</div>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr><th>Komponenta</th><th class="price-col">Cena</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <strong>Samsung Galaxy Tab A9+ 10.5"</strong><br>
+                                <small>WiFi, 4GB/64GB, predna kamera 5MP</small><br>
+                                <a href="https://tablety.heureka.sk/samsung-galaxy-tab-a9-plus-sm-x210nzaeeue/" target="_blank">Heureka.sk ~200&euro;</a>
+                            </td>
+                            <td class="price-col">~200 &euro;</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>USB-C nabijacka 25W</strong>
+                            </td>
+                            <td class="price-col">~18 &euro;</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Drziak na stenu</strong><br>
+                                <small>Univerzalny, zamykatelny, 10-11"</small><br>
+                                <a href="https://www.amazon.de/s?k=tablet+wall+mount+10+inch+lockable" target="_blank">Amazon.de</a>
+                            </td>
+                            <td class="price-col">~25 &euro;</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Odoo Face Recognition modul</strong><br>
+                                <small>AI rozpoznavanie tvare, auto check-in/out</small><br>
+                                <a href="https://apps.odoo.com/apps/modules/19.0/hr_attendance_face_detection" target="_blank">Odoo Apps Store</a>
+                            </td>
+                            <td class="price-col">~150-300 &euro;</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="pros">
+                    <h3>Vyhody</h3>
+                    <ul>
+                        <li>Ziadna karta, ziadna citacka</li>
+                        <li>Bezkontaktne &mdash; hygiena</li>
+                        <li>Nemozne zabudnut badge doma</li>
+                        <li>Jednoducha montaz</li>
+                    </ul>
+                </div>
+                <div class="pros cons">
+                    <h3>Nevyhody</h3>
+                    <ul>
+                        <li>Odoo modul stoji ~150-300 &euro;</li>
+                        <li>Zavisle od osvetlenia</li>
+                        <li>GDPR &mdash; biometricke udaje, treba suhlas + DPIA</li>
+                        <li>Presnost ~98% (problemy s dvojcatami, zmena vizazu)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- VARIANTA D: Fingerprint -->
+            <div class="card">
+                <h2>D: Odtlacky prstov</h2>
+                <span class="method">Custom Android app</span>
+                <p class="desc">Tablet + USB citacka odtlackov. Android wrapper appka s WebView + USB bridge. Najvyssia bezpecnost.</p>
+
+                <div class="price-total">
+                    <div class="label">Celkova cena</div>
+                    <div class="amount">~370 &euro;</div>
+                    <div class="label">+ vyvoj ~500-1500 &euro;</div>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr><th>Komponenta</th><th class="price-col">Cena</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <strong>Samsung Galaxy Tab A9+ 10.5"</strong><br>
+                                <small>WiFi, 4GB/64GB, USB-C OTG</small><br>
+                                <a href="https://tablety.heureka.sk/samsung-galaxy-tab-a9-plus-sm-x210nzaeeue/" target="_blank">Heureka.sk ~200&euro;</a>
                             </td>
                             <td class="price-col">~200 &euro;</td>
                         </tr>
@@ -367,23 +624,22 @@
                         </tr>
                         <tr>
                             <td>
-                                <strong>USB-C OTG Hub s PD nabijanim</strong><br>
-                                <small>UGREEN / Baseus &mdash; USB-A + PD pass-through</small><br>
+                                <strong>USB-C OTG Hub s PD</strong><br>
+                                <small>UGREEN &mdash; USB-A + nabijanie</small><br>
                                 <a href="https://www.amazon.de/UGREEN-Verteiler-Stromversorgung-Port-kompatibel-Thinkpad-Grau/dp/B07Q29N6H1" target="_blank">Amazon.de</a>
                             </td>
                             <td class="price-col">~25 &euro;</td>
                         </tr>
                         <tr>
                             <td>
-                                <strong>USB-C nabijacka 25W</strong><br>
-                                <small>Samsung EP-TA800 alebo ekvivalent</small>
+                                <strong>USB-C nabijacka 25W</strong>
                             </td>
                             <td class="price-col">~18 &euro;</td>
                         </tr>
                         <tr>
                             <td>
                                 <strong>Kiosk puzdro na stenu</strong><br>
-                                <small>Zamykatelne, s priestorom na citacku a kable</small><br>
+                                <small>Zamykatelne, priestor na citacku</small><br>
                                 <a href="https://www.amazon.com/Mount-Anti-Theft-Universal-Compatible-Samsung/dp/B09Z3YYH1Z" target="_blank">Amazon</a>
                             </td>
                             <td class="price-col">~50 &euro;</td>
@@ -394,96 +650,86 @@
                 <div class="pros">
                     <h3>Vyhody</h3>
                     <ul>
-                        <li>Najvyssia presnost identifikacie (99.9%+)</li>
+                        <li>Najvyssia presnost (99.9%+)</li>
+                        <li>Nemozne obist &mdash; ziadne zdielanie kariet</li>
                         <li>Funguje v akomkolvek osvetleni</li>
-                        <li>Nemozne obist (na rozdiel od fotky tvare)</li>
                     </ul>
                 </div>
                 <div class="pros cons">
                     <h3>Nevyhody</h3>
                     <ul>
-                        <li>Treba Android wrapper appku (vyvoj)</li>
-                        <li>USB OTG + nabijanie moze byt nespolahive na niektorych tabletoch</li>
-                        <li>Vyssia cena (~370 &euro;)</li>
+                        <li>Treba custom Android wrapper app (~500-1500 &euro;)</li>
+                        <li>USB OTG + nabijanie moze byt nespolahive</li>
+                        <li>Najdrahsie riesenie celkovo</li>
                         <li>Kontaktne &mdash; hygiena</li>
+                        <li>GDPR biometricke udaje</li>
                     </ul>
                 </div>
             </div>
         </div>
 
         <!-- ARCHITECTURE -->
-        <div class="architecture">
+        <div class="section">
             <h2>Architektura riesenia</h2>
             <div class="arch-diagram">
-<strong>Varianta A: Face Recognition</strong>
+<strong>A: QR/Barkod (kamera)</strong>              <strong>B: QR/Barkod (USB citacka)</strong>
 
-  [Zamestnanec] --pozrie sa--> [Tablet kamera]
-                                    |
-                              [Odoo Web App]
-                              (kiosk mod v Chrome)
-                                    |
-                              [Face Recognition]
-                              (JS / Odoo modul)
-                                    |
-                              [Odoo Server]
-                              (hr_attendance)
+  [Badge/karta] --pred kameru-->       [Badge/karta] --pred citacku-->
+  [Tablet kamera]                      [USB 2D skener]
+       |                                    | (keyboard HID)
+  [Odoo Kiosk Mode]                    [Odoo Kiosk Mode]
+  (nativny scan)                       (nativny scan)
+       |                                    |
+  [Odoo Server]                        [Odoo Server]
 
 
-<strong>Varianta B: Fingerprint (Android Wrapper)</strong>
+<strong>C: Face Recognition</strong>                 <strong>D: Fingerprint</strong>
 
-  [Zamestnanec] --prilozi prst--> [USB Citacka]
-                                       |
-                                  [Android App]
-                                  (WebView + USB Bridge)
-                                       |
-                              JS &lt;--&gt; JavaScriptInterface
-                                       |
-                                  [Odoo Web App]
-                                  (v WebView)
-                                       |
-                                  [Odoo Server]
-                                  (hr_attendance)</div>
+  [Zamestnanec] --pozrie sa-->         [Zamestnanec] --prilozi prst-->
+  [Tablet kamera]                      [USB citacka]
+       |                                    |
+  [Face Recognition modul]             [Android Wrapper App]
+  (Odoo plugin)                        (WebView + USB Bridge)
+       |                                    |
+  [Odoo Server]                        [Odoo Server]</div>
         </div>
 
         <!-- ODOO MODULY -->
-        <div class="odoo-modules">
-            <h2>Odoo moduly pre attendance</h2>
+        <div class="section">
+            <h2>Odoo moduly a SW</h2>
             <div class="module-grid">
+                <div class="module">
+                    <h3>hr_attendance (zakladny)</h3>
+                    <p>Standardny Odoo kiosk mode &mdash; PIN, badge scan (barkod/QR), manualne vyhladanie</p>
+                    <p class="module-price">Zahrnuty v Odoo</p>
+                    <a href="https://www.odoo.com/documentation/19.0/applications/hr/attendances/kiosks.html" target="_blank">Dokumentacia</a>
+                </div>
                 <div class="module">
                     <h3>Face Recognition Attendance</h3>
                     <p>AI rozpoznavanie tvare, bezkontaktne check-in/out, GPS tracking</p>
-                    <p class="module-price">Odoo 19: ~150-300 &euro;</p>
+                    <p class="module-price">~150-300 &euro;</p>
                     <a href="https://apps.odoo.com/apps/modules/19.0/hr_attendance_face_detection" target="_blank">Odoo Apps Store</a>
                 </div>
                 <div class="module">
-                    <h3>Smart Attendance + Face Capture</h3>
-                    <p>Badge scan + fotka tvare pri kazdom check-in pre overenie</p>
-                    <p class="module-price">Odoo 17/18: ~50-100 &euro;</p>
-                    <a href="https://apps.odoo.com/apps/modules/18.0/ps_attendance_face_recognition" target="_blank">Odoo Apps Store</a>
-                </div>
-                <div class="module">
-                    <h3>hr_attendance (zakladny)</h3>
-                    <p>Standardny Odoo modul &mdash; PIN / badge scan, kiosk mod</p>
-                    <p class="module-price">Zahrnuty v Odoo</p>
-                </div>
-                <div class="module">
-                    <h3>Custom fingerprint modul</h3>
-                    <p>Vlastny vyvoj &mdash; integrace SecuGen SDK s Odoo attendance API</p>
-                    <p class="module-price">Vyvoj: ~500-1500 &euro;</p>
+                    <h3>Fully Kiosk Browser</h3>
+                    <p>Android kiosk launcher &mdash; zamkne tablet na jednu web stranku, auto-restart</p>
+                    <p class="module-price">~25 &euro;/rok</p>
+                    <a href="https://www.fully-kiosk.com" target="_blank">fully-kiosk.com</a>
                 </div>
             </div>
         </div>
 
         <!-- POZNAMKY -->
-        <div class="notes">
+        <div class="section notes">
             <h2>Dolezite poznamky</h2>
             <ul>
-                <li><strong>GDPR:</strong> Biometricke udaje (odtlacky aj tvar) su specialna kategoria. Potrebujete suhlas zamestnancov + DPIA (Data Protection Impact Assessment).</li>
-                <li><strong>OTG + nabijanie:</strong> Pred kupou overte, ze Samsung Tab A9+ podporuje simultanne OTG data + PD nabijanie cez hub.</li>
-                <li><strong>Odoo verzia:</strong> Face recognition moduly su dostupne pre Odoo 17-19. Pre starsie verzie moze byt potrebna migracia.</li>
-                <li><strong>Osvetlenie:</strong> Pre face recognition umiestnite terminal na dobre osvetlene miesto. Vyhnite sa protisvetlu.</li>
-                <li><strong>Internet:</strong> Tablet musi mat stabilne WiFi pripojenie k Odoo serveru.</li>
-                <li><strong>Kiosk mod:</strong> Android Settings &gt; Display &gt; Screen pinning, alebo pouzite dedickovany kiosk launcher (napr. Fully Kiosk Browser ~25 &euro;/rok).</li>
+                <li><strong>Odoo kiosk mode:</strong> Nativne podporuje scan barkodu/QR cez kameru tabletu AJ cez USB citacku (keyboard emulacia). Varianty A a B su zero-code riesenia.</li>
+                <li><strong>GDPR:</strong> Varianty A a B (barkod/QR) nepracuju s biometriou &mdash; GDPR je jednoduche. Varianty C a D (tvar/odtlacok) vyzaduju suhlas + DPIA.</li>
+                <li><strong>OTG + nabijanie:</strong> Pre varianty B a D overte, ze tablet podporuje simultanne OTG + PD nabijanie cez hub.</li>
+                <li><strong>Osvetlenie:</strong> Pre varianty A a C (kamera) umiestnite terminal na dobre osvetlene miesto.</li>
+                <li><strong>WiFi:</strong> Tablet musi mat stabilne pripojenie k Odoo serveru.</li>
+                <li><strong>Badge karty:</strong> Tlac QR/barkod kariet cez Odoo (Employees &gt; Print Badge) alebo externe &mdash; ~1&euro;/karta.</li>
+                <li><strong>Odporucanie:</strong> Pre vacsinu firem je <strong>Varianta A</strong> (QR cez kameru) najlepsi pomer cena/funkcia. Face recognition pridajte ak chcete eliminovat zdielanie kariet.</li>
             </ul>
         </div>
 
